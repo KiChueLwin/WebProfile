@@ -138,11 +138,51 @@ body{
 .btn:hover::after{
     background-position: 100% 0;
 }
-
+/* .popup-outer{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(34, 176, 224, 0.4);
+}
+.popup-box img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.popup-box{
+    background: #fff;
+    padding: 30px;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 12px;
+}
+.popup-box .close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+} */
+.profile-text {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+} 
+.profile-text h3{
+    display: flex;
+    flex-direction: column;
+    color: #0c1022;
+}
 .home-img{
     width: 420px;
     height: 420px;
-    
+   
 }
 .home-img .circle{
     width: 100%;
@@ -393,3 +433,306 @@ body{
     color: white;  
 }
 
+/* Education */
+.Edu .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.Edu .col {
+    flex: 1;
+    padding: 20px;
+}
+
+.Edu h1 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px ;
+    color: #fff;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.edu-img {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+.edu-img img {
+    width: 100%;
+}
+
+.edu-img:hover {
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px;
+    transition: 0.5s;
+}
+
+/* Paragraph Styles */
+.edu-cont1,
+.edu-cont2,
+.edu-cont3 {
+    margin-top: 50px;
+    line-height: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.edu-cont1h3,
+.edu-cont2h3,
+.edu-cont3h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 0.5cm;
+    margin-top: 40px;
+}
+
+/* Contact me */
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0c1022;
+
+}
+
+.Contact-Wrapper{
+    width: 500px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 30px 40px;
+    border: 2px solid white;
+}
+@media(max-width: 380px){
+    .SignUp-Form{
+        width: 300px;
+    }
+}
+@media(max-width:380px){
+    .SignUp-Wrapper{
+        width: 300px;
+    }
+    .SignUp-Wrapper .SignUpInput-Box{
+        width: 100px;
+    }
+    .SignUp-Wrapper .SighUp-btn{
+        width: 100px;
+    }
+}
+.Contact-Wrapper h1{
+    font-size: 38px;
+    text-align: center;
+    justify-content: center;
+    width: 410px;
+}
+@media(max-width: 380px){
+    .Contact-Wrapper h1{
+       width: 220px;
+    }
+}
+
+.Contact-Wrapper .ContactInput-Box{
+    position: relative;
+    width: 410px;
+    height: 50px;
+    /* background: blue; */
+    margin: 30px 0;
+    text-align: center;
+    
+}
+@media(max-width:380px){
+    .Contact-Wrapper .ContactInput-Box{
+        width: 220px;
+        
+    }
+}
+.ContactInput-Box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 20px 45px 20px 20px;
+}
+
+.ContactInput-Box input::placeholder{
+    color: white;
+}
+
+.Contact-Wrapper .check-contact{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Contact-Wrapper .Send-btn{
+    width: 410px;
+    height: 45px;
+    background: rgba(25, 101, 177, 0.775);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+@media(max-width: 380px){
+    .Contact-Wrapper .Send-btn{
+        width: 220px;
+    }
+}
+
+.check-contact p{
+     align-items: center;
+     
+}
+
+/* Certificates */
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    color: #0c1022;
+}
+
+.certi-container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /* background: #0D4671; */
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+    color: #0c1022;
+
+}
+
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.certi-container:nth-child(1){
+    animation-delay: 0s;
+
+}
+.certi-container:nth-child(2){
+    animation-delay: 1s;
+}
+.certi-container:nth-child(3){
+    animation-delay: 2s;
+
+}
+.certi-container:nth-child(4){
+    animation-delay: 3s;
+
+}
+.certi-container:nth-child(5){
+    animation-delay: 4s;
+
+}
+.certi-text-box{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+
+
+.left-container{
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.certi-container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img{
+    left: -20px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 5s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.text-box h2{
+    font-weight: 600;
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+}
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+.certi-head{
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
